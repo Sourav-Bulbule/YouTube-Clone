@@ -53,21 +53,32 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 column-gap: 16px;
 row-gap: 40px;
+padding-left: 96px;
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
     .video-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
-@media (min-width:801px) and (max-width:1124px){
+@media screen and (min-width:801px) and (max-width:1124px){
     .video-grid{
         grid-template-columns:1fr 1fr 1fr ;
     }
 }
-@media (min-width: 1125px){
+@media screen and (min-width: 1125px){
     .video-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .video-grid{
+        grid-template-columns: 1fr;
+        padding-left: 24px;
+    }
+    .sidebar{
+        display: none;
+        
     }
 }
 
